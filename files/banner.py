@@ -1,4 +1,5 @@
 import os
+from files.colors import r , g , w , c , y
 
 logo = f"""
  ▄█     █▄   ▄█  ███▄▄▄▄   ████████▄   ▄██████▄   ▄█     █▄     ▄████████ 
@@ -21,7 +22,7 @@ logo = f"""
               ███    ███            ▀▀▀▀▀▀                                                                 
 """
 
-lololo = """
+lololo = f"""
     ███        ▄████████  ▄██████▄       ▄█    ▄████████ ███▄▄▄▄                      
 ▀█████████▄   ███    ███ ███    ███     ███   ███    ███ ███▀▀▀██▄                    
    ▀███▀▀██   ███    ███ ███    ███     ███   ███    ███ ███   ███                    
@@ -40,13 +41,14 @@ lololo = """
 ███    ███   ███    ███   ███    ███   ███    ███     ███     ███    ███   ███    ███ 
 ████████▀    ███    ███   ██████████   ███    █▀     ▄████▀    ▀██████▀    ███    ███ 
              ███    ███                                                    ███    ███ 
-
+                                            
+                                            {y}<{w}/{y}> {c}Author: {w}Saad Khan     
 """
 from files.colors import *
 
 
 def banner():
-    print(ran + logo)
+    print(ran + lololo)
     print(ran + "\n","|"+ Style.BRIGHT + Fore.LIGHTCYAN_EX,  "- " * 4, " [+] Follow me on Instagram @saadkhan041 ", "- " * 4 + ran + "|")
     print(ran +"\n", "|"+ Style.BRIGHT + Fore.LIGHTYELLOW_EX,  "- " * 4, " [+] Follow me on Instagram @coding_memz ", "- " * 4+ran + "|")
     print(ran +"\n", "|"+ Style.BRIGHT + Fore.LIGHTRED_EX,  "- " * 4, "[+] Github: https://github.com/Saadkhan041/ ", "- " * 3+ran + "|")

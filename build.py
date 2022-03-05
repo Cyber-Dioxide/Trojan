@@ -1,6 +1,6 @@
 import os
 import platform
-
+from files.banner import banner , banner2
 from getpass import getpass
 from colorama import Fore
 from time import sleep
@@ -23,9 +23,11 @@ def colors(str):
 
 command("cls") if 'Windows' in platform.platform() else command("clear")
 
+banner()
+
 
 def genertor():
-    mail = input(f"{C}[-]{Y} Enter Gmail id: " + W)
+    mail = input(f"\n{C}[{R}-{C}]{Y} Enter Gmail id: " + W)
 
     paswd = getpass(f"{Y}[{R}?{Y}] Password: ")
 
@@ -192,7 +194,7 @@ input("[\\t[+] Press enter to exit")
     with open("generator.py" , "a+") as f:
         f.write(script)
 
-        print(colors("Generated! \n\n\n"))
+        print(colors("\nGenerated! \n"))
 
     print(colors("Creating .exe..."))
 
@@ -200,6 +202,8 @@ input("[\\t[+] Press enter to exit")
     input(C + "\n\tPress enter to exit! ")
 
 genertor()
+
+
 
 
 
