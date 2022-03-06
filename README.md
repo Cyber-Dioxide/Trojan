@@ -17,15 +17,18 @@ This tool is will create a .exe file which will send you all the information of 
 # Usage
 _For Linux
 * bash install.sh
+* python3 build.py
 If you get error of pynstaller! then just simply send generator.py to victim! 
 
 _For Windows
 * ruby termux.rb
+* python3 build.py
 Everything will be fine! -_+
 
 _For Temux
 * bash termux_run.sh
-* ruby termux.py
+* ruby termux.rb
+* python3 build.py
 If you get error of pynstaller! then just simply send generator.py to victim! 
 
 # Conversion
