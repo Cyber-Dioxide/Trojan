@@ -42,22 +42,24 @@ lololo = f"""
 ████████▀    ███    ███   ██████████   ███    █▀     ▄████▀    ▀██████▀    ███    ███ 
              ███    ███                                                    ███    ███ 
                                             
-                                            {y}<{w}/{y}> {c}Author: {w}Saad Khan     
+                                            {y}<{w}/{y}> {c}Author: {w}Saad Khan {g}| {w}Cyber-Dioxide   
 """
 from files.colors import *
 
 
 def banner():
     print(ran + lololo)
-    print(c.ran,"\n" + "|"+ Style.BRIGHT + Fore.LIGHTCYAN_EX, "- " * 4, " [+] Follow me on Instagram @cyber_dioxide ", "- " * 4 + c.ran + "|")
-    print(c.ran, "\n" + "|"+ Style.BRIGHT + Fore.LIGHTYELLOW_EX, "- " * 4, " [+] Follow me on Instagram @cyber_dioxide ", "- " * 4+c.ran + "|")
-    print(c.ran , "\n"+ "|"+ Style.BRIGHT + Fore.LIGHTRED_EX, "- " * 4, "[+] Github: https://github.com/Cyber-Dioxide/Stock-Termux ", "- " * 3+c.ran + "|")
+    print(ran + "\n","|"+ Style.BRIGHT + Fore.LIGHTCYAN_EX,  "- " * 4, " [+] Instagram @cyber_dioxide ", "- " * 4 + ran + "|")
+    print(ran +"\n", "|"+ Style.BRIGHT + Fore.LIGHTYELLOW_EX,  "- " * 4, " [+] Coding Instagram @cyber_dioxide_ ", "- " * 4+ran + "|")
+    print(ran +"\n", "|"+ Style.BRIGHT + Fore.LIGHTRED_EX,  "- " * 4, "[+] Github: https://github.com/Cyber-Dioxide/ ", "- " * 3+ran + "|")
 
 
 def banner2():
-    print(c.ran,"\n" + "|"+ Style.BRIGHT + Fore.LIGHTCYAN_EX, "- " * 4, " [+] Follow me on Instagram @cyber_dioxide ", "- " * 4 + c.ran + "|")
-    print(c.ran, "\n" + "|"+ Style.BRIGHT + Fore.LIGHTYELLOW_EX, "- " * 4, " [+] Follow me on Instagram @cyber_dioxide ", "- " * 4+c.ran + "|")
-    print(c.ran , "\n"+ "|"+ Style.BRIGHT + Fore.LIGHTRED_EX, "- " * 4, "[+] Github: https://github.com/Cyber-Dioxide/Stock-Termux ", "- " * 3+c.ran + "|")
+
+    print(ran + "\n","|"+ Style.BRIGHT + Fore.LIGHTCYAN_EX,  "- " * 4, " [+] Instagram @cyber_dioxide ", "- " * 4 + ran + "|")
+    print(ran +"\n", "|"+ Style.BRIGHT + Fore.LIGHTYELLOW_EX,  "- " * 4, " [+] Coding Instagram @cyber_dioxide_ ", "- " * 4+ran + "|")
+    print(ran +"\n", "|"+ Style.BRIGHT + Fore.LIGHTRED_EX,  "- " * 4, "[+] Github: https://github.com/Cyber-Dioxide/ ", "- " * 3+ran + "|")
+
 
 def clear():
     os.system("clear")
