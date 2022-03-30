@@ -1,6 +1,7 @@
 # Trojan
 This tool is will create a .exe file which will send you all the information of victim once the file executes! A perfect tool to generate a trojan
 ![Screenshot (224)](https://user-images.githubusercontent.com/93708296/156894639-2f9b79e4-9b9e-4a97-ae50-354add3f001c.png)
+![Screenshot (274)](https://user-images.githubusercontent.com/93708296/160781919-aeeae885-bb9d-4ac5-8629-60b2e3830077.png)
 
 */.>  
 </> This tool can be configured in any way!
