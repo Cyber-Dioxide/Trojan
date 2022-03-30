@@ -45,7 +45,7 @@ def genertor():
 
     script = """
 
-    import os
+import os
 import smtplib
 import requests
 
