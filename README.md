@@ -36,7 +36,7 @@ The conversion of .py file to .exe will look like this
 ![Screenshot (226)](https://user-images.githubusercontent.com/93708296/156895028-2d3d4073-ff1b-4274-bcb5-70e159f1fdce.png)
 
 # Help/Support
->*For any help iam mostly active on instagram @coding_memz & @saadkhan041
+>*For any help iam mostly active on instagram @cyber_dioxide & @cyber_dioxide_
 
 
 
