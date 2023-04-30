@@ -8,6 +8,12 @@ This tool is will create a .exe file which will send you all the information of 
 */.>  
 </> More features will be added soon
 
+# Service
+* To get your own custom hacking tool, dm me on instagram @coding_memz
+* To create your own custom virus, dm me on instagram @coding_memz
+* Get the 14M passwords list containing worlds mostly used passwords, dm me on instagram @coding_memz.
+* Get the worlds best hacking course, dm me on instagram @coding_memz
+
 # Important Note!
 * To use it without any errors!
 1. Create a fake gmail account and allow insecure apps.
