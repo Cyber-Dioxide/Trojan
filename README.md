@@ -44,7 +44,7 @@ The conversion of .py file to .exe will look like this
 ![Screenshot (226)](https://user-images.githubusercontent.com/93708296/156895028-2d3d4073-ff1b-4274-bcb5-70e159f1fdce.png)
 
 # Help/Support
->*For any help iam mostly active on [Telegram](https://www.cyberdioxide.com/p/contact.html)
+>*For any help iam mostly active on [Telegram](https://www.cyox2.com/p/contact.html)
 
 
 
